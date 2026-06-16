@@ -1,0 +1,35 @@
+:root {
+  /* Clean Backgrounds */
+  --bg-color: #F8FAFC;       /* Very light, crisp slate-gray */
+  --card-bg-color: #FFFFFF;  /* Pure white for cards to pop */
+
+  /* High Contrast Text */
+  --main-text-color: #334155;    /* Deep slate for highly readable body text */
+  --heading-text-color: #0F172A; /* Almost black for strong headings */
+  
+  /* Accents from your palette */
+  --accent-teal: #008190;        
+  --accent-dark-teal: #006D63;   
+  
+  /* Tags */
+  --tag-bg-color: #E0F2FE;       /* Very soft blue/teal */
+  --tag-text-color: #0369A1;     /* Strong contrast blue for tag text */
+}
+
+html {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body {
+  font-family: system-ui, -apple-system, sans-serif;
+  background-color: var(--bg-color);
+  color: var(--main-text-color);
+  line-height: 1.6;
+  margin: 0;
+}
+
+h1, h2, h3 { 
+  color: var(--heading-text-color); 
+}
