@@ -530,3 +530,21 @@
 .langSwitcher[data-active="en"] .langSlider { transform: translateX(0); }
 .langSwitcher[data-active="pl"] .langSlider { transform: translateX(50px); }
 .langSwitcher[data-active="ru"] .langSlider { transform: translateX(100px); }
+
+/* --- Modal GIF Preview Styles --- */
+.modalGifContainer {
+  margin: 1.5rem 0;
+  border-radius: 12px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  /* Removed background, border, and padding so it's borderless */
+}
+
+.modalGif {
+  width: 100%;
+  height: auto;
+  display: block;
+  object-fit: cover;
+  border-radius: 12px; /* Smooth matching corners for the GIF itself */
+}
