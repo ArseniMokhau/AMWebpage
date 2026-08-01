@@ -210,6 +210,12 @@ const attachModalEvents = () => {
           ? `<div class="${styles.modalGifContainer}"><img src="${gifPath}" alt="${project.title[currentLang]} Demo" class="${styles.modalGif}"/></div>` 
           : '';
 
+        const githubBtnHTML = project.link 
+          ? `<a href="${project.link}" target="_blank" rel="noopener noreferrer" class="${styles.githubBtn}">
+               ${uiStrings.viewGithub[currentLang]}
+             </a>` 
+          : '';
+
         modalBody.innerHTML = `
           <h2 class="${styles.modalTitle}">${project.title[currentLang]}</h2>
           <p class="${styles.modalDescription}">${project.longDescription[currentLang]}</p>
@@ -217,9 +223,7 @@ const attachModalEvents = () => {
           <div class="${styles.modalTags}">
             ${project.allTags.map(tech => `<span class="${styles.tag}">${tech}</span>`).join('')}
           </div>
-          <a href="${project.link}" target="_blank" rel="noopener noreferrer" class="${styles.githubBtn}">
-            ${uiStrings.viewGithub[currentLang]}
-          </a>
+          ${githubBtnHTML}
         `;
         
         const scrollbarWidth = window.innerWidth - document.documentElement.clientWidth;

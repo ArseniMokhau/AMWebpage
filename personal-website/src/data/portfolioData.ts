@@ -164,7 +164,7 @@ export const projects: Project[] = [
     },
     previewTags: ["React", "TypeScript", "Spring Boot", "Kafka"],
     allTags: ["React", "TypeScript", "Redux", "RxJS", "Java", "Spring Boot", "Apache Kafka", "SQL Server", "Kubernetes", "Azure", "Jest", "Cypress"],
-    link: "https://github.com/ArseniMokhau/Tracklio",
+    link: "",
     gif: "/gifs/tracklio.gif"
   },
   {
