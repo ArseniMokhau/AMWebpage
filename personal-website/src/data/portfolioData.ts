@@ -145,6 +145,27 @@ export const educationData: Education[] = [
 ];
 
 export const projects: Project[] = [
+    {
+      id: "mix-auditor",
+      title: {
+        en: "🚧 [WIP] Who changed my mix? Blockchain + AI",
+        pl: "🚧 [WIP] Kto zmienił mój mix? Blockchain + AI",
+        ru: "🚧 [WIP] Кто изменил мой микс? Блокчейн + ИИ"
+      },
+      shortDescription: {
+        en: "A dual-module system designed to verify the authenticity of audio files using AI and Blockchain.",
+        pl: "Dwumodułowy system zaprojektowany do weryfikacji autentyczności plików dźwiękowych za pomocą AI i Blockchain.",
+        ru: "Двухмодульная система для проверки подлинности аудиофайлов с использованием ИИ и блокчейна."
+      },
+      longDescription: {
+        en: "Currently in development as a research project. This distributed system verifies audio authenticity to combat manipulation like deepfakes. It features a Next.js frontend, a Nest.JS API, an asynchronous Redis queue, a Python/PyTorch AI worker for Mel-spectrogram analysis, and a Solidity/Hardhat Blockchain layer for cryptographic hash verification.",
+        pl: "Projekt badawczy w fazie rozwoju. Rozproszony system weryfikuje autentyczność dźwięku, zwalczając manipulacje takie jak deepfake. Obejmuje frontend Next.js, API Nest.JS, asynchroniczną kolejkę Redis, moduł AI w Python/PyTorch oraz warstwę Blockchain Solidity.",
+        ru: "Исследовательский проект в стадии разработки. Распределенная система проверяет подлинность звука для борьбы с манипуляциями (дипфейками). Включает фронтенд Next.js, API Nest.JS, асинхронную очередь Redis, модуль ИИ на Python/PyTorch и слой блокчейна Solidity."
+      },
+      previewTags: ["WIP", "PyTorch", "Blockchain", "Next.js"],
+      allTags: ["WIP", "React", "TypeScript", "Next.js", "Nest.JS", "PostgreSQL", "Redis", "Python", "PyTorch", "Solidity", "Blockchain", "AI"],
+      link: "https://github.com/ArseniMokhau/Who-Changed-My-Mix",
+    },
    {
     id: "tracklio",
     title: {
@@ -168,27 +189,6 @@ export const projects: Project[] = [
     gif: "/gifs/tracklio.gif"
   },
   {
-    id: "mix-auditor",
-    title: {
-      en: "🚧 [WIP] Who changed my mix? Blockchain + AI",
-      pl: "🚧 [WIP] Kto zmienił mój mix? Blockchain + AI",
-      ru: "🚧 [WIP] Кто изменил мой микс? Блокчейн + ИИ"
-    },
-    shortDescription: {
-      en: "A dual-module system designed to verify the authenticity of audio files using AI and Blockchain.",
-      pl: "Dwumodułowy system zaprojektowany do weryfikacji autentyczności plików dźwiękowych za pomocą AI i Blockchain.",
-      ru: "Двухмодульная система для проверки подлинности аудиофайлов с использованием ИИ и блокчейна."
-    },
-    longDescription: {
-      en: "Currently in development as a research project. This distributed system verifies audio authenticity to combat manipulation like deepfakes. It features a Next.js frontend, a Nest.JS API, an asynchronous Redis queue, a Python/PyTorch AI worker for Mel-spectrogram analysis, and a Solidity/Hardhat Blockchain layer for cryptographic hash verification.",
-      pl: "Projekt badawczy w fazie rozwoju. Rozproszony system weryfikuje autentyczność dźwięku, zwalczając manipulacje takie jak deepfake. Obejmuje frontend Next.js, API Nest.JS, asynchroniczną kolejkę Redis, moduł AI w Python/PyTorch oraz warstwę Blockchain Solidity.",
-      ru: "Исследовательский проект в стадии разработки. Распределенная система проверяет подлинность звука для борьбы с манипуляциями (дипфейками). Включает фронтенд Next.js, API Nest.JS, асинхронную очередь Redis, модуль ИИ на Python/PyTorch и слой блокчейна Solidity."
-    },
-    previewTags: ["WIP", "PyTorch", "Blockchain", "Next.js"],
-    allTags: ["WIP", "React", "TypeScript", "Next.js", "Nest.JS", "PostgreSQL", "Redis", "Python", "PyTorch", "Solidity", "Blockchain", "AI"],
-    link: "https://github.com/ArseniMokhau/Who-changed-my-mix",
-  },
-  {
     id: "schedule",
     title: { en: "Interactive Academic Schedule Manager", pl: "Menedżer Harmonogramów Akademickich", ru: "Интерактивный менеджер расписаний" },
     shortDescription: { 
@@ -203,7 +203,44 @@ export const projects: Project[] = [
     },
     previewTags: ["React.js", ".NET 8", "Full-stack"],
     allTags: ["React.js", ".NET 8", "C#", "Full-stack", "Algorithm Design", "Thesis Project"],
-    link: "https://github.com/ArseniMokhau/schedule-management-system"
+    link: "https://github.com/ArseniMokhau/schedule-management-system",
+    gif: "/gifs/sms.gif"
+  },
+  {
+    id: "recipe",
+    title: { en: "Recipe Manager", pl: "Menedżer Przepisów", ru: "Менеджер рецептов" },
+    shortDescription: {
+      en: "A cross-platform mobile application for managing and organizing recipes.",
+      pl: "Wieloplatformowa aplikacja mobilna do zarządzania i organizowania przepisów.",
+      ru: "Кросс-платформенное мобильное приложение для управления рецептами."
+    },
+    longDescription: {
+      en: "A mobile application written in React Native, designed to help users efficiently manage, organize, and access their personal recipes. Built with cross-platform compatibility in mind to ensure a seamless experience across both Android and iOS devices.",
+      pl: "Aplikacja mobilna napisana w React Native, pomagająca użytkownikom efektywnie zarządzać osobistymi przepisami. Zbudowana z myślą o kompatybilności wieloplatformowej (Android i iOS).",
+      ru: "Мобильное приложение, написанное на React Native, помогающее пользователям эффективно управлять своими личными рецептами. Создано с учетом кроссплатформенной совместимости (Android и iOS)."
+    },
+    previewTags: ["React Native", "Mobile Dev"],
+    allTags: ["React Native", "JavaScript", "Mobile Development", "iOS", "Android", "UI/UX"],
+    link: "https://github.com/ArseniMokhau/RecipeManager/tree/Full",
+    gif: "/gifs/recipemanager.gif"
+  },
+  {
+    id: "maphelper",
+    title: { en: "Map-Helper Navigation Tool", pl: "Narzędzie Nawigacyjne Map-Helper", ru: "Навигационный инструмент Map-Helper" },
+    shortDescription: {
+      en: "A web solution integrating the Google Maps API for campus routing via QR codes.",
+      pl: "Rozwiązanie webowe integrujące Google Maps API do wyznaczania tras za pomocą kodów QR.",
+      ru: "Веб-решение, интегрирующее Google Maps API для маршрутизации по кампусу с помощью QR-кодов."
+    },
+    longDescription: {
+      en: "Developed as a web-based utility to assist with navigation. By integrating the Google Maps API, this React.js application generates optimized routes across campus locations and dynamically creates QR codes, allowing users to easily transfer the routing data to their mobile devices.",
+      pl: "Narzędzie webowe pomagające w nawigacji. Poprzez integrację Google Maps API, aplikacja w React.js generuje zoptymalizowane trasy po kampusie i dynamicznie tworzy kody QR.",
+      ru: "Веб-утилита для помощи в навигации. Интегрируя API Google Maps, это приложение на React.js генерирует оптимизированные маршруты по кампусу и динамически создает QR-коды."
+    },
+    previewTags: ["React.js", "Google Maps API"],
+    allTags: ["React.js", "Google Maps API", "Web Development", "Performance Optimization", "QR Integration"],
+    link: "https://github.com/ArseniMokhau/Map-Helper",
+    gif: "/images/maphelper.png"
   },
   {
     id: "mos6502",
@@ -223,38 +260,21 @@ export const projects: Project[] = [
     link: "https://github.com/ArseniMokhau/RetroKomputer"
   },
   {
-    id: "recipe",
-    title: { en: "Recipe Manager", pl: "Menedżer Przepisów", ru: "Менеджер рецептов" },
+    id: "safety",
+    title: { en: "Safety Alert Application", pl: "Aplikacja Alarmowa Safety Alert", ru: "Приложение безопасности" },
     shortDescription: {
-      en: "A cross-platform mobile application for managing and organizing recipes.",
-      pl: "Wieloplatformowa aplikacja mobilna do zarządzania i organizowania przepisów.",
-      ru: "Кросс-платформенное мобильное приложение для управления рецептами."
+      en: "An Android security app utilizing device sensors to detect emergency situations.",
+      pl: "Aplikacja zabezpieczająca na Androida wykorzystująca czujniki do wykrywania sytuacji awaryjnych.",
+      ru: "Android-приложение безопасности, использующее датчики устройства для выявления экстренных ситуаций."
     },
     longDescription: {
-      en: "A mobile application written in React Native, designed to help users efficiently manage, organize, and access their personal recipes. Built with cross-platform compatibility in mind to ensure a seamless experience across both Android and iOS devices.",
-      pl: "Aplikacja mobilna napisana w React Native, pomagająca użytkownikom efektywnie zarządzać osobistymi przepisami. Zbudowana z myślą o kompatybilności wieloplatformowej (Android i iOS).",
-      ru: "Мобильное приложение, написанное на React Native, помогающее пользователям эффективно управлять своими личными рецептами. Создано с учетом кроссплатформенной совместимости (Android и iOS)."
+      en: "An Android safety application developed in Kotlin. It leverages various native Android services, such as geolocation, the accelerometer, push notifications, and messaging, to actively detect and respond to emergency situations.",
+      pl: "Aplikacja bezpieczeństwa na Androida napisana w Kotlin. Wykorzystuje natywne usługi, takie jak geolokalizacja, akcelerometr, powiadomienia push i SMS, aby aktywnie reagować na nagłe wypadki.",
+      ru: "Android-приложение безопасности, разработанное на Kotlin. Оно использует различные нативные службы (геолокация, акселерометр, push-уведомления и SMS) для активного реагирования на экстренные ситуации."
     },
-    previewTags: ["React Native", "Mobile Dev"],
-    allTags: ["React Native", "JavaScript", "Mobile Development", "iOS", "Android", "UI/UX"],
-    link: "https://github.com/ArseniMokhau/RecipeManager/tree/Full"
-  },
-  {
-    id: "maphelper",
-    title: { en: "Map-Helper Navigation Tool", pl: "Narzędzie Nawigacyjne Map-Helper", ru: "Навигационный инструмент Map-Helper" },
-    shortDescription: {
-      en: "A web solution integrating the Google Maps API for campus routing via QR codes.",
-      pl: "Rozwiązanie webowe integrujące Google Maps API do wyznaczania tras za pomocą kodów QR.",
-      ru: "Веб-решение, интегрирующее Google Maps API для маршрутизации по кампусу с помощью QR-кодов."
-    },
-    longDescription: {
-      en: "Developed as a web-based utility to assist with navigation. By integrating the Google Maps API, this React.js application generates optimized routes across campus locations and dynamically creates QR codes, allowing users to easily transfer the routing data to their mobile devices.",
-      pl: "Narzędzie webowe pomagające w nawigacji. Poprzez integrację Google Maps API, aplikacja w React.js generuje zoptymalizowane trasy po kampusie i dynamicznie tworzy kody QR.",
-      ru: "Веб-утилита для помощи в навигации. Интегрируя API Google Maps, это приложение на React.js генерирует оптимизированные маршруты по кампусу и динамически создает QR-коды."
-    },
-    previewTags: ["React.js", "Google Maps API"],
-    allTags: ["React.js", "Google Maps API", "Web Development", "Performance Optimization", "QR Integration"],
-    link: "https://github.com/ArseniMokhau/Map-Helper"
+    previewTags: ["Kotlin", "Android", "Sensors"],
+    allTags: ["Kotlin", "Android", "Geolocation", "Mobile Dev", "Security"],
+    link: "https://github.com/Hererra/Project_Android_2024/tree/final-code"
   },
   {
     id: "assignment",
@@ -272,23 +292,6 @@ export const projects: Project[] = [
     previewTags: ["C#", "React", "SQLite"],
     allTags: ["C#", "ASP.NET", "React", "JavaScript", "SQLite", "Database Design"],
     link: "https://github.com/ArseniMokhau/StudentAssignmentManager"
-  },
-  {
-    id: "quiz",
-    title: { en: "Quiz Solver", pl: "Rozwiązywacz Quizów", ru: "Приложение для решения тестов" },
-    shortDescription: {
-      en: "A C# test solver application built using WPF and the MVVM pattern.",
-      pl: "Aplikacja C# do rozwiązywania testów zbudowana w WPF z wykorzystaniem wzorca MVVM.",
-      ru: "Приложение для решения тестов на C#, созданное с использованием WPF и паттерна MVVM."
-    },
-    longDescription: {
-      en: "This desktop application is built using WPF and follows the MVVM architectural pattern. It provides a responsive user interface for solving tests and utilizes a SQL database for the efficient management of questions and test results.",
-      pl: "Aplikacja desktopowa zbudowana z użyciem WPF, podążająca za wzorcem MVVM. Zapewnia responsywny interfejs do rozwiązywania testów i wykorzystuje bazę SQL do zarządzania pytaniami.",
-      ru: "Настольное приложение создано с использованием WPF и следует архитектурному паттерну MVVM. Оно предоставляет адаптивный интерфейс для решения тестов и использует SQL-базу."
-    },
-    previewTags: ["C#", "WPF", "SQL"],
-    allTags: ["C#", "WPF", "MVVM", "SQL", "Desktop App"],
-    link: "https://github.com/ArseniMokhau/Solver" 
   },
   {
     id: "translator",
@@ -325,21 +328,21 @@ export const projects: Project[] = [
     link: "https://github.com/VgHost-26/system-ai"
   },
   {
-    id: "safety",
-    title: { en: "Safety Alert Application", pl: "Aplikacja Alarmowa Safety Alert", ru: "Приложение безопасности" },
+    id: "quiz",
+    title: { en: "Quiz Solver", pl: "Rozwiązywacz Quizów", ru: "Приложение для решения тестов" },
     shortDescription: {
-      en: "An Android security app utilizing device sensors to detect emergency situations.",
-      pl: "Aplikacja zabezpieczająca na Androida wykorzystująca czujniki do wykrywania sytuacji awaryjnych.",
-      ru: "Android-приложение безопасности, использующее датчики устройства для выявления экстренных ситуаций."
+      en: "A C# test solver application built using WPF and the MVVM pattern.",
+      pl: "Aplikacja C# do rozwiązywania testów zbudowana w WPF z wykorzystaniem wzorca MVVM.",
+      ru: "Приложение для решения тестов на C#, созданное с использованием WPF и паттерна MVVM."
     },
     longDescription: {
-      en: "An Android safety application developed in Kotlin. It leverages various native Android services, such as geolocation, the accelerometer, push notifications, and messaging, to actively detect and respond to emergency situations.",
-      pl: "Aplikacja bezpieczeństwa na Androida napisana w Kotlin. Wykorzystuje natywne usługi, takie jak geolokalizacja, akcelerometr, powiadomienia push i SMS, aby aktywnie reagować na nagłe wypadki.",
-      ru: "Android-приложение безопасности, разработанное на Kotlin. Оно использует различные нативные службы (геолокация, акселерометр, push-уведомления и SMS) для активного реагирования на экстренные ситуации."
+      en: "This desktop application is built using WPF and follows the MVVM architectural pattern. It provides a responsive user interface for solving tests and utilizes a SQL database for the efficient management of questions and test results.",
+      pl: "Aplikacja desktopowa zbudowana z użyciem WPF, podążająca za wzorcem MVVM. Zapewnia responsywny interfejs do rozwiązywania testów i wykorzystuje bazę SQL do zarządzania pytaniami.",
+      ru: "Настольное приложение создано с использованием WPF и следует архитектурному паттерну MVVM. Оно предоставляет адаптивный интерфейс для решения тестов и использует SQL-базу."
     },
-    previewTags: ["Kotlin", "Android", "Sensors"],
-    allTags: ["Kotlin", "Android", "Geolocation", "Mobile Dev", "Security"],
-    link: "https://github.com/Hererra/Project_Android_2024/tree/final-code"
+    previewTags: ["C#", "WPF", "SQL"],
+    allTags: ["C#", "WPF", "MVVM", "SQL", "Desktop App"],
+    link: "https://github.com/ArseniMokhau/Solver" 
   },
   {
     id: "scheduler",
